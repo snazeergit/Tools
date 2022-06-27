@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.nt.service.BankLoanServiceTest
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 2.133 s - in com.nt.service.BankLoanServiceTest
