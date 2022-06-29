@@ -53,10 +53,8 @@ public class BankLoanServiceTest3 {
 
 	@Test
 	public void testForNoException() {
-
 		System.out.println("Test3.testForNoException()");
 		assertDoesNotThrow(() -> service.calSimpleInterest(10000, 4, 2));
-
 	}
 
 	@Test

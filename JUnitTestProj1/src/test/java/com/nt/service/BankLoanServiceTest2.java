@@ -10,20 +10,18 @@ public class BankLoanServiceTest2 {
 
 	BankLoanService service;
 
-	//runs before every test case automatically, method name can be anything
+	// runs before every test case automatically, method name can be anything
 	@BeforeEach
 	public void beforeEveryTestCase() {
 		System.out.println("BeforeEach");
 		service = new BankLoanService();
-
 	}
 
-	//runs after every test case automatically, method name can be anything
+	// runs after every test case automatically, method name can be anything
 	@AfterEach
 	public void afterEveryTestCase() {
 		System.out.println("AfterEach");
 		service = null;
-
 	}
 
 	@Test
@@ -46,24 +44,19 @@ public class BankLoanServiceTest2 {
 	public void testWithInvalidInputs() {
 		System.out.println("Test3.testWithInvalidInputs()");
 		assertThrows(IllegalArgumentException.class, () -> service.calSimpleInterest(0, 0, 0));
-
 	}
 
 	@Test
 	public void testForNoException() {
-
 		System.out.println("Test3.testForNoException()");
-		//When we provide positive inputs to service method it will not throw any exception 
+		// When we provide positive inputs to service method it will not throw any exception
 		assertDoesNotThrow(() -> service.calSimpleInterest(10000, 4, 2));
-
 	}
 
-	
 	@Test
 	public void testWithTimer() {
 		System.out.println("Test4.testWithTimer()");
 		assertTimeout(Duration.ofMillis(11000), () -> service.timerMethod());
-
 	}
 
 }

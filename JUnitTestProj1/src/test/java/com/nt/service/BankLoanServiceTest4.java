@@ -80,10 +80,8 @@ public class BankLoanServiceTest4 {
 	@Tag("PROD")
 	@Tag("UAT") //This test case will run in both prod and uat environments
 	public void testForNoException() {
-
 		System.out.println("Test3.testForNoException()");
 		assertDoesNotThrow(() -> service.calSimpleInterest(10000, 4, 2));
-
 	}
 
 	@Test
